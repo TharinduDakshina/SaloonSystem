@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="888.0" styleClass="admin-background" stylesheets="@../style/ManagerStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageEmployeeController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="638.0" prefWidth="191.0" styleClass="label-backgrounder" stylesheets="@../style/ManagerStyle.css">
+         <children>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="6.0" layoutY="48.0" onAction="#registerOnAction" prefHeight="141.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-one" stylesheets="@../style/ManagerStyle.css" text="Register">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="6.0" layoutY="230.0" onAction="#updateOnAction" prefHeight="148.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-two" stylesheets="@../style/ManagerStyle.css" text="Update">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="4.0" layoutY="423.0" onAction="#deleteOnAction" prefHeight="141.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-tree" stylesheets="@../style/ManagerStyle.css" text="Delete">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView fontSmoothingType="LCD" glyphName="BOOK" layoutX="69.0" layoutY="124.0" size="50" stroke="BLACK" strokeType="INSIDE" />
+            <FontAwesomeIconView glyphName="GEAR" layoutX="72.0" layoutY="311.0" size="50" />
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="72.0" layoutY="496.0" size="50" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeFinalContext" layoutX="205.0" layoutY="12.0" prefHeight="615.0" prefWidth="704.0" style="-fx-background-color: #dcdde1; -fx-border-color: black; -fx-border-width: 3;">
+         <children>
+            <TableView fx:id="tblEmployee" layoutX="10.0" layoutY="108.0" prefHeight="431.0" prefWidth="675.0" style="-fx-border-color: black;">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="76.0" text="Emp Id" />
+                <TableColumn fx:id="colName" prefWidth="116.0" text="Emp Name" />
+                  <TableColumn fx:id="colCategory" prefWidth="103.0" text="Emp category" />
+                  <TableColumn fx:id="colAddress" prefWidth="142.0" text="Emp address" />
+                  <TableColumn fx:id="colContact" prefWidth="121.0" text="Emp contact" />
+                  <TableColumn fx:id="colSalary" prefWidth="120.0" text="Emp Bcs Salary" />
+              </columns>
+            </TableView>
+            <Label layoutX="157.0" layoutY="4.0" text="Employee" underline="true">
+               <font>
+                  <Font name="Californian FB Bold" size="70.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

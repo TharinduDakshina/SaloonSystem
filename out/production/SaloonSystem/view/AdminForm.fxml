@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminContext" prefHeight="757.0" prefWidth="1248.0" styleClass="admin-background" stylesheets="@../style/AdminStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="757.0" prefWidth="284.0" styleClass="label-background" stylesheets="@../style/AdminStyle.css">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="7.0" layoutY="210.0" onAction="#manageEmployeeOnAction" prefHeight="59.0" prefWidth="273.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="button-one" stylesheets="@../style/AdminStyle.css" text="Manage Employees">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="6.0" layoutY="275.0" onAction="#manageItemContext" prefHeight="59.0" prefWidth="273.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="button-one" stylesheets="@../style/AdminStyle.css" text="Manage Items">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="5.0" layoutY="342.0" onAction="#manageServiceOnAction" prefHeight="59.0" prefWidth="273.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="button-one" stylesheets="@../style/AdminStyle.css" text="Manage Srevices">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="5.0" layoutY="407.0" onAction="#reportsOnAction" prefHeight="59.0" prefWidth="273.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="button-one" stylesheets="@../style/AdminStyle.css" text="Reports">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton id="logOutButton" fx:id="logOutButton" buttonType="RAISED" layoutX="10.0" layoutY="658.0" onAction="#logOutOnAction" prefHeight="67.0" prefWidth="264.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="logOutButton" text="LogOut">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIconView fontSmoothingType="LCD" glyphName="SIGN_OUT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="8.0" layoutY="145.0" onAction="#customerONAction" prefHeight="59.0" prefWidth="273.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" styleClass="button-one" stylesheets="@../style/AdminStyle.css" text="Customers">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="115.0" fitWidth="100.0" layoutX="16.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/barbershop-hipster-logo-character-260nw-446645473.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="16.0" layoutY="156.0" onDragDetected="#customerONAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-people-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="3.0" layoutY="215.0" onDragDetected="#customerONAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-admin-settings-male-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="15.0" layoutY="286.0" onDragDetected="#customerONAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-product-management-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="20.0" layoutY="343.0" onDragDetected="#customerONAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-service-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="20.0" layoutY="418.0" onDragDetected="#customerONAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-report-64.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="help" alignment="CENTER" layoutX="50.0" layoutY="475.0" onMouseClicked="#goToGoogleHelp" prefHeight="44.0" prefWidth="128.0" stylesheets="@../style/AdminStyle.css" text="Help" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asrte/icons8-help-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <Label layoutX="243.0" prefHeight="115.0" prefWidth="938.0" />
+      <Label layoutX="138.0" layoutY="26.0" prefHeight="53.0" prefWidth="146.0" text="ADD CUSTOMER" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="297.0" layoutY="18.0" opacity="0.45" orientation="VERTICAL" prefHeight="81.0" prefWidth="4.0" />
+      <TextField fx:id="txtCustomerNic" alignment="CENTER" layoutX="307.0" layoutY="37.0" onKeyReleased="#validation" prefHeight="31.0" prefWidth="228.0" promptText="Customer NIC" styleClass="text-field">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustomerName" alignment="CENTER" layoutX="545.0" layoutY="37.0" onKeyReleased="#validation" prefHeight="37.0" prefWidth="351.0" promptText="Name" styleClass="text-field">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustomerAge" alignment="CENTER" layoutX="906.0" layoutY="38.0" onKeyReleased="#validation" prefHeight="37.0" prefWidth="160.0" promptText="Age" styleClass="text-field">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <AnchorPane fx:id="manageContext" layoutX="314.0" layoutY="116.0" prefHeight="630.0" prefWidth="888.0" styleClass="manageContext" stylesheets="@../style/AdminStyle.css">
+         <children>
+            <TableView fx:id="tblCustomer" layoutX="5.0" layoutY="25.0" prefHeight="591.0" prefWidth="878.0">
+              <columns>
+                <TableColumn fx:id="colNIC" prefWidth="147.0" text="Customer NIC" />
+                <TableColumn fx:id="colName" prefWidth="212.0" text="Customer Name" />
+                  <TableColumn fx:id="colAge" prefWidth="137.0" text="Customer Age" />
+                  <TableColumn fx:id="colHairStyle" prefWidth="225.0" text="Customer Hair Style" />
+                  <TableColumn fx:id="colCount" prefWidth="180.0" text="Customer Count" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnAddCustomer" layoutX="1077.0" layoutY="36.0" onAction="#addCustomerOnAction" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #c8d6e5;" stylesheets="@../style/AdminStyle.css" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

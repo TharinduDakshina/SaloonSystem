@@ -1,0 +1,41 @@
+.admin-background{
+    -fx-background-color: linear-gradient(to bottom, #2c3e50,#34495e);
+}
+.label-background{
+    -fx-background-color: linear-gradient(to bottom, #2c3e50,#34495e);
+}
+.text-field:hover{
+    -fx-prompt-text-fill: black;
+    -fx-border-color: black;
+}
+.text-area:hover{
+    -fx-prompt-text-fill: black;
+    -fx-border-color: black;
+}
+.button-one{
+    #-fx-background-color: #dfe4ea;
+    -fx-text-fill: white;
+}
+
+.button-one:hover{
+    -fx-background-color: #f8c291;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2;
+
+}
+
+.logOutButton {
+    #-fx-background-color: #dfe4ea;
+    -fx-text-fill: white;
+}
+
+.logOutButton:hover{
+    -fx-background-color: red;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2;
+}
+.manageContext{
+    -fx-background-color: linear-gradient(to bottom, #2c3e50,#34495e);
+}

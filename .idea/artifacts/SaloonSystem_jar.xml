@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SaloonSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SaloonSystem_jar</output-path>
+    <root id="archive" name="SaloonSystem.jar">
+      <element id="module-output" name="SaloonSystem" />
+    </root>
+  </artifact>
+</component>

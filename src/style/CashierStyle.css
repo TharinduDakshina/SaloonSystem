@@ -1,0 +1,35 @@
+.cashier-Apo{
+    -fx-background-color: linear-gradient(from 100% 50% to 35% 100%,#cf6a87,#CAD3C8);
+}
+
+.button-one{
+    -fx-background-color: #1dd1a1;
+}
+.button-one:hover{
+    -fx-background-color: #4cd137;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.button-tow{
+    -fx-background-color: #ff6b6b;
+}
+.button-tow:hover{
+    -fx-background-color: #e84118;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.button-three{
+    -fx-background-color: #fad390;
+}
+
+.button-three:hover{
+    -fx-background-color: #f5cd79;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+

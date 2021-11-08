@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeDeleteOnActionController">
+   <children>
+      <Label layoutX="74.0" layoutY="22.0" prefHeight="82.0" prefWidth="539.0" text="Remove Employee">
+         <font>
+            <Font name="Gill Sans MT" size="70.0" />
+         </font>
+      </Label>
+      <Separator layoutX="107.0" layoutY="120.0" prefHeight="5.0" prefWidth="467.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="109.0" layoutY="161.0" prefHeight="33.0" prefWidth="138.0" text="Employee Id : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="76.0" layoutY="207.0" prefHeight="33.0" prefWidth="170.0" text="Employee Name : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="287.0" prefHeight="33.0" prefWidth="193.0" text="Employee Address : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="47.0" layoutY="377.0" prefHeight="33.0" prefWidth="193.0" text="Employee Context : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutY="421.0" prefHeight="33.0" prefWidth="240.0" text="Employee Basic Salary : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="468.0" prefHeight="33.0" prefWidth="240.0" text="Employee Password : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" disable="true" editable="false" layoutX="268.0" layoutY="208.0" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" disable="true" editable="false" layoutX="269.0" layoutY="378.0" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSalary" disable="true" editable="false" layoutX="269.0" layoutY="422.0" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pswdPassword" disable="true" editable="false" layoutX="269.0" layoutY="469.0" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <TextArea fx:id="txtAddress" disable="true" editable="false" layoutX="267.0" layoutY="289.0" prefHeight="75.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" disable="true" layoutX="522.0" layoutY="537.0" onAction="#employeeDeleteOnAction" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: #ef5777; -fx-border-color: black; -fx-border-width: 2;" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="626.0" layoutY="189.0" size="30" />
+      <ComboBox fx:id="cmbEmployee" layoutX="269.0" layoutY="162.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="337.0" promptText="Select Employee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label alignment="CENTER_RIGHT" layoutX="43.0" layoutY="246.0" prefHeight="33.0" prefWidth="202.0" text="Employee Category : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategory" disable="true" editable="false" layoutX="269.0" layoutY="246.0" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

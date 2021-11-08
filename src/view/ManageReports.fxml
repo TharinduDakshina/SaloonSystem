@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="888.0" styleClass="admin-background" stylesheets="@../style/ManagerStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageReportsController">
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="191.0" styleClass="label-backgrounder" stylesheets="@../style/ManagerStyle.css">
+         <children>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="5.0" layoutY="110.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#dalyInComeReportOnAction" prefHeight="148.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-two" stylesheets="@../style/ManagerStyle.css" text="Daily">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="4.0" layoutY="383.0" onAction="#monthlyInComeReportOnAction" prefHeight="141.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-tree" stylesheets="@../style/ManagerStyle.css" text="Monthly">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeReportsFinalContext" layoutX="205.0" layoutY="11.0" prefHeight="615.0" prefWidth="704.0" style="-fx-background-color: #dcdde1; -fx-border-color: black; -fx-border-width: 3;">
+         <children>
+            <TableView fx:id="tblAppointment" layoutX="9.0" layoutY="72.0" prefHeight="436.0" prefWidth="685.0">
+              <columns>
+                <TableColumn fx:id="colApoId" prefWidth="84.0" text="Apo Id" />
+                <TableColumn fx:id="colCustomer" prefWidth="105.0" text="Customer NIC" />
+                  <TableColumn fx:id="colEmp" prefWidth="120.0" text="Emp Id" />
+                  <TableColumn fx:id="colTotal" prefWidth="121.0" text="Total" />
+                  <TableColumn fx:id="colDiscount" prefWidth="116.0" text="Discount" />
+                  <TableColumn fx:id="colDate" prefWidth="138.0" text="Date" />
+              </columns>
+            </TableView>
+            <Label layoutX="221.0" layoutY="21.0" text="Appoint Details">
+               <font>
+                  <Font name="Arial Black" size="28.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

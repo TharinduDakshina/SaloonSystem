@@ -1,0 +1,19 @@
+.label-background{
+    -fx-background-color: linear-gradient(to bottom ,#e6dded,#cf6a87);
+}
+
+.text-field-one{
+    /*-fx-text-fill: white;*/
+    -fx-background-color:  #0652DD;
+}
+.text-field-one:hover{
+    -fx-background-color: #7bed9f;
+}
+.button-fore{
+    -fx-background-color: #ff6b6b;
+    -fx-text-fill: black;
+}
+.button-fore:hover{
+    -fx-background-color: #EA2027;
+    -fx-text-fill: white;
+}

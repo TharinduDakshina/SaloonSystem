@@ -1,0 +1,31 @@
+.admin-background{
+    -fx-background-color: linear-gradient(to bottom, #2c3e50,#576574);
+}
+
+.label-backgrounder{
+    -fx-background-color: linear-gradient(to bottom, #2c3e50,#576574);
+}
+
+.button-one,.button-two,.button-tree{
+    -fx-background-color: #bdc3c7;
+}
+.button-one:hover{
+    -fx-background-color: #78e08f;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2;
+}
+
+. button-two:hover{
+    -fx-background-color: #a55eea;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2;
+}
+
+.button-tree:hover{
+    -fx-background-color: #ff6b81;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2;
+}

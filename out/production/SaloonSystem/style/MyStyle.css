@@ -1,0 +1,36 @@
+.login-background{
+    -fx-background-color: linear-gradient(from 100% 50% to 35% 100%,#e9ffdb,#778ca3);
+}
+
+.lbl-background{
+    -fx-background-color: linear-gradient(from 100% 50% to 35% 100%,#e9ffdb,#be2edd);
+}
+.lblDashBord-background{
+    -fx-background-color: linear-gradient(from 5% 5% to 5% 5%,#e9ffdb,#be2edd);
+}
+
+.text-field-customer{
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+}
+.dashBord-background{
+    -fx-background-color: linear-gradient(from 50% 50% to 50% 100%,#e9ffdb,#778ca3);
+}
+/*.image-background{
+    -fx-border-image-repeat: ;
+}*/
+
+.button{
+    -fx-background-color:  #a29bfe;
+}
+.button:hover{
+    -fx-background-color: black;
+    -fx-text-fill:  white;
+}
+
+.button-one{
+    -fx-background-color:  #f6e58d;
+}
+
+
+

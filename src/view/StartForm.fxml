@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="apnStartContext" prefHeight="548.0" prefWidth="835.0" style="-fx-background-color: #202121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartFormController">
+   <children>
+      <ImageView fitHeight="216.0" fitWidth="262.0" layoutX="299.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asrte/salon-logo-573CEE0E3B-seeklogo.com.jpg" />
+         </image>
+      </ImageView>
+      <JFXProgressBar fx:id="progressBarStart" layoutX="268.0" layoutY="391.0" prefHeight="4.0" prefWidth="280.0" progress="0.03" style="-fx-background-color: black;" />
+      <ProgressIndicator fx:id="circleProgress" layoutX="419.0" layoutY="358.0" prefHeight="21.0" prefWidth="31.0" />
+      <Label layoutX="358.0" layoutY="358.0" text="Loading" textFill="#f5eded" />
+   </children>
+</AnchorPane>

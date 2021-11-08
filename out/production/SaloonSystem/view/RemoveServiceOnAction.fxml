@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveServiceOnActionController">
+   <children>
+      <Label layoutX="142.0" layoutY="30.0" text="Delete Service" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="70.0" />
+         </font>
+      </Label>
+      <Separator layoutX="50.0" layoutY="128.0" prefHeight="6.0" prefWidth="603.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="193.0" text="Service Id : ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="29.0" layoutY="300.0" text="Service Name : ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="39.0" layoutY="401.0" text="Service Price : ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtServiceName" disable="true" editable="false" layoutX="221.0" layoutY="300.0" prefHeight="31.0" prefWidth="383.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="txtServicePrice" disable="true" editable="false" layoutX="222.0" layoutY="401.0" prefHeight="31.0" prefWidth="383.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" disable="true" layoutX="527.0" layoutY="519.0" onAction="#deleteOnAction" prefHeight="51.0" prefWidth="98.0" style="-fx-background-color: #ff4757; -fx-border-color: black;" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="618.0" layoutY="222.0" size="35" />
+      <ComboBox fx:id="cmbServiceId" layoutX="221.0" layoutY="194.0" onAction="#searchOnAction" prefHeight="39.0" prefWidth="383.0" promptText="Select Service" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+.register-background{
+    -fx-background-color: #f7f1e3;
+}
+
+.button-clear{
+    -fx-background-color:  #f6e58d;
+}
+.button-clear:hover{
+    -fx-background-color:  #e1b12c;
+}
+
+.button-confirm{
+    -fx-background-color:   #badc58;
+}
+.button-confirm:hover{
+    -fx-background-color:   #44bd32;
+}
+

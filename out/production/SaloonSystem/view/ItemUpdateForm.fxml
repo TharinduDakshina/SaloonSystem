@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemUpdateFormController">
+   <children>
+      <Label layoutX="210.0" layoutY="25.0" text="Item Update" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="172.0" text="Item Id : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="241.0" text="Item Name : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="309.0" text="Item Price : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="377.0" text="Item Qty On Hand : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="85.0" layoutY="121.0" prefHeight="8.0" prefWidth="544.0" />
+      <TextField fx:id="txtName" disable="true" layoutX="250.0" layoutY="242.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="txtPrice" disable="true" layoutX="250.0" layoutY="312.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="txtQtyOnHand" disable="true" layoutX="250.0" layoutY="378.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" disable="true" layoutX="501.0" layoutY="498.0" onAction="#updateOnAction" prefHeight="56.0" prefWidth="123.0" style="-fx-background-color: #b8e994; -fx-border-color: black;" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" disable="true" layoutX="357.0" layoutY="498.0" onAction="#clearOnAction" prefHeight="56.0" prefWidth="123.0" style="-fx-background-color: #f7b731; -fx-border-color: black;" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="639.0" layoutY="199.0" size="30" />
+      <ComboBox fx:id="cmbSelectItem" layoutX="250.0" layoutY="175.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="375.0" promptText="Select Item" />
+   </children>
+</AnchorPane>

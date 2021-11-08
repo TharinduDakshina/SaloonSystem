@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="print bill by service" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4e9f49f-3499-4a93-804e-6e0fc565ac2e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="appointmentNo" class="java.lang.String"/>
+	<parameter name="customerNIC" class="java.lang.String"/>
+	<parameter name="serviceName" class="java.lang.String"/>
+	<parameter name="descount" class="java.lang.String"/>
+	<parameter name="price" class="java.lang.String"/>
+	<parameter name="cashRecived" class="java.lang.String"/>
+	<parameter name="balance" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="555" height="48" uuid="22ceaed3-401d-42a8-a58a-f32cf96638d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="37" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[VIMASHI SALOON]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="340" y="45" width="210" height="30" uuid="4aca7ab8-85a2-4620-bf94-e87f46343dfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="410" y="54" width="180" height="30" uuid="e5ebaac3-3903-45c5-b7ca-9a4a13f4099a"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="4" width="120" height="106" uuid="90d1fe9e-f194-49db-8135-5b1bcd1939a9"/>
+				<imageExpression><![CDATA["view/assert/saloon1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="207" y="45" width="150" height="30" uuid="b0dd9a3e-8278-47f2-9e40-743f54d71b6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MAITIPE 1ST LANE,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="63" width="100" height="30" uuid="8ffbb945-967d-47bd-b9c5-45cb417f8240"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KARAPITIYA,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="80" width="100" height="30" uuid="869abcc1-ba3c-4d70-9267-67b21dcd8af0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GALLE.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="197" splitType="Stretch">
+			<textField>
+				<reportElement x="277" y="4" width="111" height="30" uuid="eb3656b3-9798-415c-8469-29b197d860ed"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{appointmentNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="29" width="111" height="30" uuid="048d821f-8ed5-41c7-afc9-eafa96acc5e6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{customerNIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="54" width="111" height="30" uuid="18759782-6eff-4982-b036-23aead671f2d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{serviceName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="103" width="111" height="30" uuid="c87ca492-64fc-4e54-93f8-8c65c9f44f1a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{descount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="79" width="111" height="30" uuid="a8726d96-2d25-4f4d-81bb-4f7ff3c3aec5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="157" y="4" width="114" height="30" uuid="5f523057-d255-474a-80f8-8695accb5965"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointment No : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="29" width="114" height="30" uuid="ae879b82-a08f-4f01-833b-4600cc11b2a2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Nic : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="54" width="114" height="30" uuid="9de5f067-2d3b-4343-9838-cadf984846ac"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Service Name : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="79" width="114" height="30" uuid="a56489af-1878-4f66-aafc-e260c23c38e7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="103" width="114" height="30" uuid="35506934-c6ad-4e26-9fd2-0c06de5381e8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discount : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="134" width="114" height="30" uuid="2bffac04-3515-4f86-b8ec-dbeef8a89b4a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cash Resived : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="135" width="110" height="30" uuid="f0fad362-fe08-4196-b0b9-d6239e9d1eb0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cashRecived}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="129" width="555" height="1" uuid="369fdf3c-be6e-4a15-91d1-2e30406530ff"/>
+			</line>
+			<staticText>
+				<reportElement x="169" y="161" width="100" height="30" uuid="638fd1b1-0ddf-4757-8055-bca9ccf5e785"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Balance : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="164" width="100" height="30" uuid="0e3258da-079a-49da-a6af-6eb8f10bbaa9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{balance}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="191" width="555" height="1" uuid="7ad93c6a-880a-45b8-bbd9-f2f741433ed3"/>
+			</line>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="6" width="140" height="30" uuid="baf9f02b-d8a9-4a2f-9d71-6d2ad164d9f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL : 0761339805]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="8" width="220" height="30" uuid="b0b31f30-8211-4669-8765-b325d3be53e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Orpening Hours : 8.00 am to 6.30 pm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="17" width="268" height="30" uuid="2aa62b5f-940a-411a-852e-5d92375042c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Software by : (tharindudakshina527@gmail.com)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="52" width="555" height="1" uuid="b52f5fa9-6a69-4a72-a67a-b6b1a08ca3a3"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

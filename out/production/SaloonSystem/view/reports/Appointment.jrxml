@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Appointment" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cbd94803-3c2f-4f5c-af00-7e46c1ecf796">
+	<parameter name="appointmentNo" class="java.lang.String"/>
+	<parameter name="NIC" class="java.lang.String"/>
+	<parameter name="style" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="barber" class="java.lang.String"/>
+	<parameter name="otherService" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="555" height="48" uuid="6c64b1e7-1722-4e78-aea7-7f2b4f4abf91"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="37" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[VIMASHI SALOON]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="340" y="45" width="210" height="30" uuid="4a0e224b-20f4-4105-9438-de94e7d2e4c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="410" y="54" width="180" height="30" uuid="d47aec43-b90a-44d4-b9ce-42d668f88fe5"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="4" width="120" height="106" uuid="287c2c1f-9f59-4aa1-9e15-065c1c42b353"/>
+				<imageExpression><![CDATA["view/assert/saloon1.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="207" y="45" width="150" height="30" uuid="a1eee58f-bd66-42de-8e18-9841f80e7ba8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MAITIPE 1ST LANE,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="63" width="100" height="30" uuid="e417865d-6ff9-4246-910f-ae77c9f6957c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KARAPITIYA,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="80" width="100" height="30" uuid="0aa8f1c2-6ae3-43f0-9309-170da036c91c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GALLE.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="214" splitType="Stretch">
+			<textField>
+				<reportElement x="269" y="26" width="81" height="30" uuid="b7dc4479-a8c7-4ab5-834a-e9641d803d43"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="268" y="0" width="81" height="30" uuid="dc470d73-4fe0-4949-870e-242c0a4f6eee"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{appointmentNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="105" width="79" height="30" uuid="8328303d-28fa-4f13-92f3-3e5b6ce8a5b1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{style}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="52" width="79" height="30" uuid="6164a938-6e8c-4fe0-8015-9a46bd75d4b4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="130" width="79" height="30" uuid="889a67ef-cbce-45c8-8a9d-70b0e05af780"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{barber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="156" width="79" height="30" uuid="8bee0fbc-fe6e-44dc-b314-4ee89f24cbd9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{otherService}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="184" width="79" height="30" uuid="380adce1-4a7a-48e3-98ff-28ab8322f127"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="0" width="140" height="30" uuid="32b61b6c-6c03-4456-9d76-00d71c03c6bb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointment No : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="26" width="100" height="30" uuid="26a678c1-05d5-4847-a469-0acdc771581e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC No : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="52" width="100" height="30" uuid="6cfc717c-1574-494a-808e-8703a965d441"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="78" width="100" height="30" uuid="5f163b9e-44c9-4719-b64e-3c23cc811230"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="103" width="100" height="30" uuid="306a2726-43c0-437a-a1e1-cb7e8a3231df"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hair Style : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="270" y="78" width="100" height="30" uuid="58b20dd2-13c0-45b3-b913-86384fe926c0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="130" y="130" width="120" height="30" uuid="cd10132e-e71d-48c4-9d44-8421abfd2bb1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Select Barber : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="156" width="110" height="30" uuid="6e7d0f4d-6d1b-40c2-a3bd-bb1108a304a7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Other Service : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="184" width="100" height="30" uuid="1b6ff54a-6d35-464d-bc7f-ad37509be671"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total : ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="6" width="140" height="30" uuid="b4dda84a-16a5-4874-9fe5-81950830f0db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEL : 0761339805]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="8" width="220" height="30" uuid="90203b6f-60dd-4cc7-84af-a960cebc88c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Orpening Hours : 8.00 am to 6.30 pm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="17" width="268" height="30" uuid="cdd6e488-1de6-43fb-8e9b-3ff5c29d7043"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Software by : (tharindudakshina527@gmail.com)]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

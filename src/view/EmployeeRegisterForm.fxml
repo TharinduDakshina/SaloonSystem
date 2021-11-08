@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeRegisterFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="84.0" layoutY="23.0" prefHeight="82.0" prefWidth="537.0" text="Employee Register">
+         <font>
+            <Font name="Gill Sans MT" size="70.0" />
+         </font>
+      </Label>
+      <Separator layoutX="112.0" layoutY="110.0" prefHeight="4.0" prefWidth="459.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="98.0" layoutY="131.0" prefHeight="33.0" prefWidth="149.0" text="Employee Id : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="68.0" layoutY="176.0" prefHeight="33.0" prefWidth="178.0" text="Employee Name : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="37.0" layoutY="277.0" prefHeight="33.0" prefWidth="204.0" text="Employee Address : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="36.0" layoutY="339.0" prefHeight="33.0" prefWidth="204.0" text="Employee Contact : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutY="400.0" prefHeight="33.0" prefWidth="240.0" text="Employee Basic Salary : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="458.0" prefHeight="33.0" prefWidth="240.0" text="Employee Password : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="259.0" layoutY="132.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0" promptText="E-001">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="259.0" layoutY="177.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="259.0" layoutY="340.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSalary" layoutX="259.0" layoutY="401.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pswdPassword" layoutX="259.0" layoutY="459.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="512.0" layoutY="527.0" onAction="#employeeRegisterOnAction" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: #d1d8e0; -fx-border-color: black; -fx-border-width: 2;" text="Save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="369.0" layoutY="527.0" onAction="#clearOnActon" prefHeight="50.0" prefWidth="118.0" style="-fx-background-color: #ffda79; -fx-border-color: black; -fx-border-width: 2;" text="Clear">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER_RIGHT" layoutX="26.0" layoutY="223.0" prefHeight="33.0" prefWidth="218.0" text="Employee Category : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategory" layoutX="259.0" layoutY="224.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="259.0" layoutY="280.0" onKeyReleased="#txtFields_Key_Release" prefHeight="31.0" prefWidth="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

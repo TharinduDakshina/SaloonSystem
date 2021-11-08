@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="888.0" styleClass="admin-background" stylesheets="@../style/ManagerStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageServiceFormController">
+   <children>
+      <AnchorPane prefHeight="638.0" prefWidth="191.0" styleClass="label-backgrounder" stylesheets="@../style/ManagerStyle.css">
+         <children>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="5.0" layoutY="243.0" onAction="#updateOnAction" prefHeight="132.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-two" stylesheets="@../style/ManagerStyle.css" text="Update">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="6.0" layoutY="431.0" onAction="#removeOnAction" prefHeight="132.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-tree" stylesheets="@../style/ManagerStyle.css" text="Remove">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="GEAR" layoutX="75.0" layoutY="312.0" size="50" />
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="75.0" layoutY="500.0" size="50" />
+            <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="6.0" layoutY="66.0" onAction="#addOnAction" prefHeight="132.0" prefWidth="182.0" ripplerFill="BLACK" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="button-one" stylesheets="@../style/ManagerStyle.css" text="Add">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="BOOK" layoutX="77.0" layoutY="132.0" size="50" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeFinalItemContext" layoutX="206.0" layoutY="12.0" prefHeight="615.0" prefWidth="704.0" style="-fx-background-color: #dcdde1; -fx-border-color: black; -fx-border-width: 3;">
+         <children>
+            <TableView fx:id="tblService" layoutX="39.0" layoutY="141.0" prefHeight="383.0" prefWidth="619.0" style="-fx-border-color: black; -fx-border-width: 2;">
+              <columns>
+                <TableColumn fx:id="colServiceId" prefWidth="169.0" text="Service Id" />
+                <TableColumn fx:id="colServiceName" prefWidth="241.0" text="Service Name" />
+                  <TableColumn fx:id="colServicePrice" prefWidth="208.0" text="Service Price" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="152.0" layoutY="15.0" prefHeight="103.0" prefWidth="352.0" text="Services" underline="true">
+               <font>
+                  <Font name="Comic Sans MS" size="70.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

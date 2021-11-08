@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DalyIncomeReportController">
+   <children>
+      <LineChart fx:id="dalyIncome" layoutX="7.0" layoutY="8.0" prefHeight="601.0" prefWidth="687.0" title="Vimashi Saloon Daly Income ">
+        <xAxis>
+          <CategoryAxis label="Date" prefHeight="52.0" prefWidth="589.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Sum of income" prefHeight="498.0" prefWidth="68.0" side="LEFT" upperBound="100000.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

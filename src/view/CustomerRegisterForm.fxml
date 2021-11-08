@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerContext" prefHeight="607.0" prefWidth="509.0" styleClass="register-background" stylesheets="@../style/RgisterForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRegisterFormController">
+   <children>
+      <Label layoutY="1.0" prefHeight="136.0" prefWidth="509.0" />
+      <Label alignment="CENTER" prefHeight="57.0" prefWidth="348.0" text="Vimashi ">
+         <font>
+            <Font name="Georgia Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="69.0" prefHeight="57.0" prefWidth="264.0" text="WELCOME ...!">
+         <font>
+            <Font name="Georgia Bold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="43.0" layoutY="141.0" prefHeight="6.0" prefWidth="446.0" />
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="53.0" layoutY="195.0" onKeyReleased="#validation" prefHeight="63.0" prefWidth="373.0" promptText="NIC Number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="43.0" layoutY="300.0" onKeyReleased="#validation" prefHeight="63.0" prefWidth="387.0" promptText="Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAge" labelFloat="true" layoutX="43.0" layoutY="407.0" onKeyReleased="#validation" prefHeight="63.0" prefWidth="387.0" promptText="Age">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnConfirm" buttonType="RAISED" layoutX="346.0" layoutY="519.0" onAction="#addCustomerOnAction" prefHeight="57.0" prefWidth="125.0" style="-fx-background-radius: 25;" styleClass="button-confirm" text="Confirm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="183.0" layoutY="519.0" onAction="#clearOnAction" prefHeight="57.0" prefWidth="125.0" style="-fx-background-radius: 25;" styleClass="button-clear" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="272.0" layoutY="4.0" prefHeight="27.0" prefWidth="152.0" text="Saloon">
+         <font>
+            <Font name="Script MT Bold" size="43.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="257.0" layoutY="65.0" startX="-100.0" />
+   </children>
+</AnchorPane>

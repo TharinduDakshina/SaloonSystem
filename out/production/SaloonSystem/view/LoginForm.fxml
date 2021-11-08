@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="498.0" prefWidth="827.0" style="-fx-background-color: #ffffff;" styleClass="login-background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="455.0" layoutX="9.0" layoutY="178.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../asrte/login.png" />
+      </ImageView>
+      <AnchorPane layoutX="479.0" layoutY="81.0" prefHeight="374.0" prefWidth="324.0" style="-fx-background-radius: 25; -fx-background-color: #ebebeb;">
+         <children>
+            <Label layoutX="104.0" layoutY="16.0" text="LOGIN">
+               <font>
+                  <Font name="Georgia" size="35.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserId" disable="true" labelFloat="true" layoutX="67.0" layoutY="112.0" prefHeight="41.0" prefWidth="236.0" promptText="User Id" unFocusColor="#323030">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pasPassword" disable="true" labelFloat="true" layoutX="68.0" layoutY="188.0" prefHeight="41.0" prefWidth="236.0" promptText="Password" unFocusColor="#3c3b3b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" disable="true" layoutX="172.0" layoutY="296.0" onAction="#loginOnAction" prefHeight="44.0" prefWidth="136.0" style="-fx-background-radius: 25;" stylesheets="@../style/MyStyle.css" text="Login">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="lblCustomer" buttonType="RAISED" layoutX="26.0" layoutY="296.0" onAction="#customerOnAction" prefHeight="44.0" prefWidth="136.0" style="-fx-background-radius: 25;" stylesheets="@../style/MyStyle.css" text="Customer">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="7.0" layoutY="115.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-name-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="9.0" layoutY="187.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asrte/icons8-password-96.png" />
+               </image>
+            </ImageView>
+            <RadioButton layoutX="31.0" layoutY="65.0" mnemonicParsing="false" onAction="#characterOnAction" text="Admin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="user" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioCashier" layoutX="115.0" layoutY="65.0" mnemonicParsing="false" onAction="#characterOnAction" text="Cashier" toggleGroup="$user" />
+            <RadioButton fx:id="radioAttendance" layoutX="202.0" layoutY="65.0" mnemonicParsing="false" onAction="#characterOnAction" text="Attendance" toggleGroup="$user" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="51.0" layoutY="38.0" prefHeight="73.0" prefWidth="277.0" text="Vimashi">
+         <font>
+            <Font name="Georgia Bold" size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="106.0" text="Saloon">
+         <font>
+            <Font name="Script MT Bold" size="45.0" />
+         </font>
+      </Label>
+      <Line endX="37.0" layoutX="318.0" layoutY="110.0" startX="-100.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <Blend mode="OVERLAY" opacity="0.0" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteItemFormController">
+   <children>
+      <Label layoutX="220.0" layoutY="35.0" text="Delete Item" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="182.0" text="Item Id : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="251.0" text="Item Name : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="319.0" text="Item Price : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="387.0" text="Item Qty On Hand : ">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="95.0" layoutY="131.0" prefHeight="8.0" prefWidth="544.0" />
+      <TextField fx:id="txtName" disable="true" editable="false" layoutX="240.0" layoutY="252.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="txtPrice" disable="true" editable="false" layoutX="240.0" layoutY="322.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="txtQtyOnHand" disable="true" editable="false" layoutX="240.0" layoutY="388.0" prefHeight="31.0" prefWidth="375.0" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" disable="true" layoutX="511.0" layoutY="508.0" onAction="#deleteOnAction" prefHeight="56.0" prefWidth="123.0" style="-fx-background-color: #fc5c65; -fx-border-color: black;" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="631.0" layoutY="212.0" size="40" />
+      <ComboBox fx:id="cmbItemId" layoutX="240.0" layoutY="183.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="375.0" promptText="Select Item" />
+   </children>
+</AnchorPane>
