@@ -3,6 +3,26 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SaloonSystem_jar</output-path>
     <root id="archive" name="SaloonSystem.jar">
       <element id="module-output" name="SaloonSystem" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/fontawesomefx-8.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/Softwares/JAVA/Libries/mysql-connector-java-8.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/bcprov-jdk15on-1.64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/castor-core-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/castor-xml-1.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-beanutils-1.9.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-collections-3.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-collections4-4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-digester-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-lang3-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/ecj-3.21.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/itext-2.1.7.js8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jackson-annotations-2.12.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jackson-core-2.12.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jackson-databind-2.12.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jasperreports-6.17.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/javax.inject-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jcommon-1.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jjjjjjjjjjjjjjjjj/jfreechart-1.0.19.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
