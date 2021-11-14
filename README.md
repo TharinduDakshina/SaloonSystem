@@ -1,6 +1,6 @@
 
 
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%99fbc531&size=36&lines=Vimashi+Saloon+)](https://git.io/typing-svg)  <br> [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=JavaFx;My SQl;Jasper+Reports;JOIN+%40Tharindu_Dakshina;)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%99fbc531&size=36&lines=Vimashi+Saloon+)](https://git.io/typing-svg)  <br> [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=JavaFx;My SQl;Jasper+Reports;JOIN+%40Tharindu_Dakshina)](https://git.io/typing-svg)
 
 ~~Start~~
 ![This is a Start](src/asrte/readMe/Start.png)
